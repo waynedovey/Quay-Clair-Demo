@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-docker login -u="anz-bank+openshift" -p="0SDMUP1CSMNHY1MD2Y1CMR4YHMJOU0U6QNG3Z7MP98W7P07VD6XXA382NRR6724D" quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com
+docker login -u="anz-bank+openshift" -p="Q9X1AN73XX5LVP0XHCJDOT111F4OP66OCKZ7R9LEJH7PQW3FC2O0NCZRJ94F8BMV" quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com
 
 # Bad Image
 docker build -t quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/badimage ./badimage
