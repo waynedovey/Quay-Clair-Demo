@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker login -u="anz-bank+openshift" -p="QHB6KTRVZ0AGZXCIQIQ0DMAJK1LQT9FOG18JOSOIL5QTU6KPGJFAPC4O74BUGSO9" quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com
+docker login -u="anz-bank+openshift" -p="LXCRL67ZSIKDPAEB91G2J492968DK2GMTNE33OTPN9S72GZTA282LS8BC42OZ7HG" quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com
 
 # Bad Image
 docker build -t quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/badimage ./badimage
@@ -26,3 +26,11 @@ docker push quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-ba
 # greatimage-base-fix Image
 docker build -t quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/greatimage-base-fix ./greatimage-base-fix
 docker push quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/greatimage-base-fix:latest
+
+# deduplicate-first  Image
+docker build -t quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/deduplicate-first:v1.2 ./deduplicate-first
+docker push quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/deduplicate-first:v1.2
+
+# deduplicate-first  Image
+docker build -t quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/deduplicate-second:v1.3 ./deduplicate-second
+docker push quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/deduplicate-second:v1.3
