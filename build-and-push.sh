@@ -26,11 +26,3 @@ docker push quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-ba
 # greatimage-base-fix Image
 docker build -t quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/greatimage-base-fix ./greatimage-base-fix
 docker push quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/greatimage-base-fix:latest
-
-# deduplicate-first  Image
-docker build -t quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/deduplicate-first:v1.2 ./deduplicate-first
-docker push quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/deduplicate-first:v1.2
-
-# deduplicate-first  Image
-docker build -t quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/deduplicate-second:v1.3 ./deduplicate-second
-docker push quayecosystem-quay-quay-enterprise.apps.ocp4.digitaldovey.com/anz-bank/deduplicate-second:v1.3
